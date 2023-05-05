@@ -1,0 +1,184 @@
+.cards {
+    display: flex;
+    flex-direction: column;
+    gap: 2.4em;
+}
+
+body {
+    padding: 1.6em;
+}
+
+.ofertas {
+    margin: 3.5em;
+}
+
+.titleofertas {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.card1, .card2, .card3 {
+    background-color: #F7FAFC;
+}
+
+
+
+.card1 .image {
+    height: 300px;
+    width: 100%;
+    background-image: url(home.png);
+    background-size: cover;
+
+    display: flex;
+    align-items: end;
+}
+
+.price {
+    color: white;
+    font-size: 1.6rem;
+    padding: .5em;
+    padding-left: 1em;
+    background: rgba(51, 51, 51, 0.66);
+}
+
+.card2 .image {
+    height: 300px;
+    width: 100%;
+    background-image: url(home.png);
+    background-size: cover;
+    display: flex;
+    align-items: end;
+}
+.card3 .image {
+    height: 300px;
+    width: 100%;
+    background-image: url(home.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: end;
+}
+
+.features {
+    display: flex;
+    gap: 3.2em;
+    padding-left: 1.6em;
+}
+
+.feature1, .feature2, .feature3 {
+    gap: 1em;
+    display: flex;
+    align-items: center;
+}
+
+.properytitle {
+    font-size: 1.8rem;
+    font-weight: 700;
+    font-family: 'Source Sans Pro';
+    
+}
+
+.description {
+  font-size: 1.6rem;
+
+}
+.propertydescription {
+    padding: 1.6em;
+    padding-top: 0;
+}
+
+.secondary2 {
+    justify-self: center;
+    width: auto;
+    text-decoration: none;
+}
+
+.wrapperbtn {
+    padding: 1.6em;
+}
+
+#verpropiedades {
+    width: auto;
+    gap: .4em;
+    display: flex;
+    margin-top: 1.5em;
+}
+
+.arrow {
+    align-self: flex-end;
+}
+
+.wrapperbtn {
+    border: 1px solid black;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1.6em;
+    color: black;
+    cursor: pointer;
+}
+
+.wrapperbtn:hover {
+    background-color: lightblue;
+}
+
+.cta {
+    color: black;
+    font-size: 20px;
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    gap: 42px;
+}
+
+@media screen and (min-width: 700px) {
+
+    body {
+        padding: 16px;
+    }
+
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+}
+
+
+
+@media screen and (min-width: 1000px) {
+
+    body {
+        padding: 16px;
+    }
+
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+}
+
+
+@media screen and (min-width: 1200px) {
+
+    body {
+        padding: 16px;
+
+    }
+
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+        max-width: 1500px;
+        margin: 0 auto;
+    }
+}
+
+
